@@ -1,0 +1,28 @@
+Psuedo code for Crystal Project 
+
+Javascript
+
+global variables
+    var targetScore
+    var wins
+    var losses
+    var roundScore
+    var crystals { //object
+        crystal 1 {
+            value
+            name
+        }
+    }
+
+
+functions
+    function generate random number (math random)() {}
+    game start() {}
+    game reset() {}
+    function addToRoundScore() {}
+    function checkIfWon() {}
+
+
+jquery click events
+    ${#crystals1}.on("click, function {}())) // put same class on all 4 crystals so that only one is needed
+    - add data-dash value attribute for each crystal, onclick could retrive value and add to score 
