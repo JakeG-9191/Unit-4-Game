@@ -27,7 +27,7 @@ function gameStart() {
     targetScore = (Math.floor(Math.random() * 100) + 21);
     $("#number-to-guess").text(targetScore);
     generateRandomNumber();
- };
+};
 
 function gameReset() {
     gameStart();
@@ -45,18 +45,18 @@ function checkIfWon() {
         wins++;
         $("#wins-text").text(wins);
         gameReset();
-        alert("Winner!");
+        alert("You have WON, Glory and Riches are Yours!");
     } else if (roundScore > targetScore) {
         losses++;
         gameReset();
-        alert("Loser!");
+        alert("You have LOST, Rare Gems have Escaped your Grasp!");
         $("#losses-text").text(losses);
     }
 };
 
 
 // jQuery Click Events
-$("#crystal-color1").on("click", function() {
+$("#crystal-color1").on("click", function () {
     var valueCrystal = ($(this).attr("data-crystalvalue"));
     valueCrystal = parseInt(crystalNumber);
     roundScore += valueCrystal;
@@ -65,7 +65,7 @@ $("#crystal-color1").on("click", function() {
     checkIfWon();
 });
 
-$("#crystal-color2").on("click", function() {
+$("#crystal-color2").on("click", function () {
     var valueCrystal = ($(this).attr("data-crystalvalue"));
     valueCrystal = parseInt(crystalNumber2);
     roundScore += valueCrystal;
@@ -74,7 +74,7 @@ $("#crystal-color2").on("click", function() {
     checkIfWon();
 });
 
-$("#crystal-color3").on("click", function() {
+$("#crystal-color3").on("click", function () {
     var valueCrystal = ($(this).attr("data-crystalvalue"));
     valueCrystal = parseInt(crystalNumber3);
     roundScore += valueCrystal;
@@ -83,7 +83,7 @@ $("#crystal-color3").on("click", function() {
     checkIfWon();
 });
 
-$("#crystal-color4").on("click", function() {
+$("#crystal-color4").on("click", function () {
     var valueCrystal = ($(this).attr("data-crystalvalue"));
     valueCrystal = parseInt(crystalNumber4);
     roundScore += valueCrystal;

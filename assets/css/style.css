@@ -11,7 +11,8 @@ body {
     height: 1200px;
     margin-top: 3%;
     background-image: url("https://static.turbosquid.com/Preview/2019/01/31__09_27_28/IMAGE1.jpgDAC5B3DB-F1EC-4AC8-BABE-65FC9966F1A2Default-28.jpg");
-    opacity: 0.90;
+    background-size: 100%;
+    opacity: 0.92;
 }
 
 h1 {
@@ -46,8 +47,9 @@ h2 {
 }
 
 #game-title {
-    font-size: 68px;
+    font-size: 72px;
     font-family: 'Homemade Apple', cursive;
+    margin-bottom: -1rem;
 }
 
 .scorecard {
@@ -80,6 +82,10 @@ p {
 
 button {
     border-radius: 15px;
+}
+
+.jumbotron {
+    border-radius: 20px;
 }
 
 /* font-family: 'Homemade Apple', cursive;
