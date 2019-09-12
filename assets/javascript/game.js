@@ -5,7 +5,7 @@ var targetScore = 53;
 var wins = 0;
 var losses = 0;
 var roundScore = 0;
-var numberOptions = [1, 2, 3, 4 , 5, 6];
+var numberOptions = [12, 4, 1, 7, 3, 9];
 
 $("#number-to-guess").text(targetScore)
 
