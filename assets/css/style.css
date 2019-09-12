@@ -1,12 +1,14 @@
 img {
     height: 200px;
     width: 200px;
+    margin: 1px 6px;
 }
 
 body {
     width: 960px;
     margin-left: 18%;
     height: 960px;
+    margin-top: 3%;
 }
 
 h1 {
@@ -28,4 +30,12 @@ h2 {
 
 .round-total {
     padding: 2rem;
+}
+
+.crystals {
+    padding: 1rem;
+}
+
+#game-title {
+    font-size: 68px;
 }
