@@ -2,3 +2,30 @@ img {
     height: 200px;
     width: 200px;
 }
+
+body {
+    width: 960px;
+    margin-left: 18%;
+    height: 960px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.directions {
+    padding: 2rem;
+    background: lightgoldenrodyellow;
+}
+
+.game-figure {
+    margin-top: 5%;
+}
+
+.round-total {
+    padding: 2rem;
+}

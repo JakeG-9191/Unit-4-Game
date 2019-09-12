@@ -25,7 +25,7 @@ function generateRandomNumber() {
 
 function gameStart() {
     targetScore = (Math.floor(Math.random() * 100) + 21);
-    $("#number-to-guess").text("Your Target Score is: " + targetScore);
+    $("#number-to-guess").text(targetScore);
     generateRandomNumber();
  };
 
@@ -33,7 +33,7 @@ function gameReset() {
     gameStart();
     generateRandomNumber();
     roundScore = 0;
-    $(".round-score").text(roundScore);
+    $("#round-score").text(roundScore);
 };
 
 // function addToRoundScore() {
@@ -43,12 +43,14 @@ function gameReset() {
 function checkIfWon() {
     if (roundScore === targetScore) {
         wins++;
+        $("#wins-text").text(wins);
         gameReset();
         alert("Winner!");
     } else if (roundScore > targetScore) {
         losses++;
         gameReset();
         alert("Loser!");
+        $("#losses-text").text(losses);
     }
 };
 
@@ -59,7 +61,7 @@ $("#crystal-color1").on("click", function() {
     valueCrystal = parseInt(crystalNumber);
     roundScore += valueCrystal;
     console.log("value crystal " + valueCrystal);
-    $(".round-score").text(roundScore);
+    $("#round-score").text(roundScore);
     checkIfWon();
 });
 
@@ -68,7 +70,7 @@ $("#crystal-color2").on("click", function() {
     valueCrystal = parseInt(crystalNumber2);
     roundScore += valueCrystal;
     console.log("value crystal2 " + valueCrystal);
-    $(".round-score").text(roundScore);
+    $("#round-score").text(roundScore);
     checkIfWon();
 });
 
@@ -77,7 +79,7 @@ $("#crystal-color3").on("click", function() {
     valueCrystal = parseInt(crystalNumber3);
     roundScore += valueCrystal;
     console.log("value crystal3 " + valueCrystal);
-    $(".round-score").text(roundScore);
+    $("#round-score").text(roundScore);
     checkIfWon();
 });
 
@@ -86,7 +88,7 @@ $("#crystal-color4").on("click", function() {
     valueCrystal = parseInt(crystalNumber4);
     roundScore += valueCrystal;
     console.log("value crystal4 " + valueCrystal);
-    $(".round-score").text(roundScore);
+    $("#round-score").text(roundScore);
     checkIfWon();
 });
 

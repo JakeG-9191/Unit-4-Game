@@ -17,8 +17,8 @@
     <div class="jumbotron">
         <h1>Crystal Collector!</h1>
     </div>
-    <div class="container">
-        <div class="row">
+    <div>
+        <div>
             <div class="directions">
                 <p>
                     You will be given a random number at the start of the game.
@@ -38,19 +38,29 @@
                     Each time when the game starts, the game will change the values of each crystal.
                 </p>
             </div>
-            <div id="number-to-guess">
+            <div class="game-figure">
+                <h1>This Is The Figure You Must Strive To Reach: <span id="number-to-guess"></span></h1>
+                </br>
             </div>
-            <div>
-                <span id = "wins"></span>
-                <span id = "losses"></span>
+            <div class="scorecard">
+                </br>
+                <h2>Your Wins Thus Far: <span id="wins-text"></span></h2>
+
+                <h2>Your Losses Thus Far: <span id="losses-text"></span></h2>
+
+                </br>
+            </div>
+            <div class="round-total">
+                <h2>Your Score Thus Far In This Round: <span id="round-score"></span></h2>
             </div>
             <div class="crystals">
-                <button class="data-crystalvalue" id="crystal-color1"><img src="assets/images/Green-Crystal.jpg"></button>
-                <button class="data-crystalvalue" id="crystal-color2"><img src="assets/images/Blue-Crystal.jpg"></button>
+                <button class="data-crystalvalue" id="crystal-color1"><img
+                        src="assets/images/Green-Crystal.jpg"></button>
+                <button class="data-crystalvalue" id="crystal-color2"><img
+                        src="assets/images/Blue-Crystal.jpg"></button>
                 <button class="data-crystalvalue" id="crystal-color3"><img src="assets/images/Red-Crystal.jpg"></button>
-                <button class="data-crystalvalue" id="crystal-color4"><img src="assets/images/Gold-Crystal.png"></button>
-            </div>
-            <div class="round-score">
+                <button class="data-crystalvalue" id="crystal-color4"><img
+                        src="assets/images/Gold-Crystal.png"></button>
             </div>
         </div>
     </div>
@@ -59,8 +69,8 @@
     </script>
 
     <script type="text/javascript" src="assets/javascript/game.js">
-    
- </script>
+
+    </script>
 </body>
 
 </html>
