@@ -1,14 +1,17 @@
 img {
     height: 200px;
     width: 200px;
-    margin: 1px 6px;
+    margin: 6px 6px;
+    border-radius: 12px;
 }
 
 body {
     width: 960px;
     margin-left: 18%;
-    height: 960px;
+    height: 1200px;
     margin-top: 3%;
+    background-image: url("https://static.turbosquid.com/Preview/2019/01/31__09_27_28/IMAGE1.jpgDAC5B3DB-F1EC-4AC8-BABE-65FC9966F1A2Default-28.jpg");
+    opacity: 0.90;
 }
 
 h1 {
@@ -17,19 +20,25 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 32px;
 }
 
 .directions {
     padding: 2rem;
     background: lightgoldenrodyellow;
+    border-radius: 20px;
 }
 
 .game-figure {
     margin-top: 5%;
+    color: white;
+    font-family: 'Acme', sans-serif;
 }
 
 .round-total {
     padding: 2rem;
+    color: wheat;
+    font-family: 'Acme', sans-serif;
 }
 
 .crystals {
@@ -38,4 +47,40 @@ h2 {
 
 #game-title {
     font-size: 68px;
+    font-family: 'Homemade Apple', cursive;
 }
+
+.scorecard {
+    color: white;
+    font-family: 'Acme', sans-serif;
+}
+
+#wins-text {
+    border-style: dashed;
+    margin: 1%;
+    padding: 0 1rem;
+    border-width: 5px;
+}
+
+#losses-text {
+    border-style: dashed;
+    margin: 1%;
+    padding: 0 1rem;
+    border-width: 5px;
+}
+
+#text-align {
+    margin-bottom: 3%;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Acme', sans-serif;
+}
+
+button {
+    border-radius: 15px;
+}
+
+/* font-family: 'Homemade Apple', cursive;
+font-family: 'Acme', sans-serif; */
