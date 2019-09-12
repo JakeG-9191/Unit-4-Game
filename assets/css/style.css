@@ -10,9 +10,12 @@ body {
     margin-left: 18%;
     height: 1200px;
     margin-top: 3%;
-    background-image: url("https://static.turbosquid.com/Preview/2019/01/31__09_27_28/IMAGE1.jpgDAC5B3DB-F1EC-4AC8-BABE-65FC9966F1A2Default-28.jpg");
-    background-size: 100%;
-    opacity: 0.92;
+    background-image: url("https://thatoregonlife.com/wp-content/uploads/2016/09/crystalcave.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.85;
 }
 
 h1 {
@@ -25,7 +28,7 @@ h2 {
 }
 
 .directions {
-    padding: 2rem;
+    padding: 1rem;
     background: lightgoldenrodyellow;
     border-radius: 20px;
 }
@@ -88,5 +91,6 @@ button {
     border-radius: 20px;
 }
 
-/* font-family: 'Homemade Apple', cursive;
-font-family: 'Acme', sans-serif; */
+#bottom-directions {
+    margin-bottom: 0;
+}
