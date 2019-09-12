@@ -1,56 +1,97 @@
-// Combo of Calc, Letter Guess, 
-
 // Global Variables
 var targetScore = 0;
 var wins = 0;
 var losses = 0;
 var roundScore = 0;
-var crystalNumber = (Math.floor(Math.random() * 12) + 1);
+
+
+var crystalNumber = 0;
+var crystalNumber2 = 0;
+var crystalNumber3 = 0;
+var crystalNumber4 = 0;
 
 var scoreTarget = $("#number-to-guess").text(targetScore)
-
+// console.log(crystalNumber);
 // Functions
 
-for (var i = 0; i < 4; i++) {
-   
-};
-
-console.log(crystalNumber)
+// $("data-crystalvalue").attr(crystalNumber);
 
 function generateRandomNumber() {
-
+    crystalNumber = (Math.floor(Math.random() * 11) + 1);
+    crystalNumber2 = (Math.floor(Math.random() * 11) + 1);
+    crystalNumber3 = (Math.floor(Math.random() * 11) + 1);
+    crystalNumber4 = (Math.floor(Math.random() * 11) + 1);
 };
 
 function gameStart() {
     targetScore = (Math.floor(Math.random() * 100) + 21);
     $("#number-to-guess").text("Your Target Score is: " + targetScore);
+    generateRandomNumber();
  };
 
 function gameReset() {
-
+    gameStart();
+    generateRandomNumber();
+    roundScore = 0;
+    $(".round-score").text(roundScore);
 };
 
-function addToRoundScore() {
+// function addToRoundScore() {
 
-};
+// };
 
 function checkIfWon() {
-
+    if (roundScore === targetScore) {
+        wins++;
+        gameReset();
+        alert("Winner!");
+    } else if (roundScore > targetScore) {
+        losses++;
+        gameReset();
+        alert("Loser!");
+    }
 };
 
 
 // jQuery Click Events
 $("#crystal-color1").on("click", function() {
     var valueCrystal = ($(this).attr("data-crystalvalue"));
-    valueCrystal = parseInt(valueCrystal);
+    valueCrystal = parseInt(crystalNumber);
     roundScore += valueCrystal;
-    console.log("value crystal " + valueCrystal)
+    console.log("value crystal " + valueCrystal);
+    $(".round-score").text(roundScore);
+    checkIfWon();
 });
 
-$("#crystals").on("click", function () {
+$("#crystal-color2").on("click", function() {
+    var valueCrystal = ($(this).attr("data-crystalvalue"));
+    valueCrystal = parseInt(crystalNumber2);
+    roundScore += valueCrystal;
+    console.log("value crystal2 " + valueCrystal);
+    $(".round-score").text(roundScore);
+    checkIfWon();
+});
 
+$("#crystal-color3").on("click", function() {
+    var valueCrystal = ($(this).attr("data-crystalvalue"));
+    valueCrystal = parseInt(crystalNumber3);
+    roundScore += valueCrystal;
+    console.log("value crystal3 " + valueCrystal);
+    $(".round-score").text(roundScore);
+    checkIfWon();
+});
+
+$("#crystal-color4").on("click", function() {
+    var valueCrystal = ($(this).attr("data-crystalvalue"));
+    valueCrystal = parseInt(crystalNumber4);
+    roundScore += valueCrystal;
+    console.log("value crystal4 " + valueCrystal);
+    $(".round-score").text(roundScore);
+    checkIfWon();
 });
 
 // Calls
 
 gameStart();
+
+checkIfWon();
