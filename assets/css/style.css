@@ -6,8 +6,8 @@ img {
 }
 
 body {
-    width: 960px;
-    margin-left: 18%;
+    width: 75%;
+    margin-left: 10%;
     height: 1200px;
     margin-top: 3%;
     background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/335550/7c03690e60e5b974a150d732a4b66ddda0acde3f.jpg");
@@ -47,6 +47,7 @@ h2 {
 
 .crystals {
     padding: 1rem;
+    margin-left: 10%;
 }
 
 #game-title {
